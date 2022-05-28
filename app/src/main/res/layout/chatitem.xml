@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/liContent"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="15dp">
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/pro" />
+
+    <TextView
+        android:id="@+id/zelda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/im"
+        android:padding="2dp"
+        android:text="Zelda Logan"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/smm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zelda"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/im"
+        android:padding="2dp"
+        android:text="Something Extra"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/ctime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:padding="2dp"
+        android:text="15 min ago"
+        android:textSize="15sp" />
+</RelativeLayout>

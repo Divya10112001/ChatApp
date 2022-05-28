@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".activity.ChatActivity">
+    <ImageView
+        android:id="@+id/chatback"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="3dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:src="@drawable/icon_material_arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_toEndOf="@+id/chatback"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/im234"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pro" />
+
+        <TextView
+            android:id="@+id/username234"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/im234"
+            android:padding="2dp"
+            android:text="Zelda Logan"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/time234"
+            android:layout_marginStart="10dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/im234"
+            android:layout_below="@+id/username234"
+            android:text="15 min ago"
+            android:textColor="@color/white"
+            android:padding="2dp"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:id="@+id/phone234"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/username234"
+            android:padding="2dp"
+            android:src="@drawable/icon_material_call"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:id="@+id/video234"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toEndOf="@+id/phone234"
+            android:padding="2dp"
+            android:src="@drawable/icon_material_videocam"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_marginTop="3dp"
+            android:id="@+id/settings"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="30dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/video234"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:padding="2dp"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:layout_below="@+id/rl2"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box3">
+
+        <ImageView
+            android:id="@+id/i1"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pro"/>
+
+        <TextView
+            android:id="@+id/t1"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/i1"
+            android:background="@drawable/box2"
+            android:text="Hello!! It was nice to see you today.I look forward on meeting you in future."
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:padding="10dp"
+            android:textStyle="normal" />
+
+        <ImageView
+            android:layout_below="@+id/t1"
+            android:id="@+id/i2"
+            android:padding="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/mask_group_7"/>
+        <TextView
+            android:id="@+id/t2"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/i2"
+            android:layout_below="@+id/t1"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@drawable/box7"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:text="Same here. your visit was unexpected but nice."/>
+        <TextView
+            android:id="@+id/t23"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday, 10:40 am"
+            android:textColor="@color/green"
+            android:layout_below="@+id/t2"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+        <ImageView
+            android:layout_below="@+id/t23"
+            android:id="@+id/i3"
+            android:padding="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/pro"/>
+        <TextView
+            android:id="@+id/t3"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/i3"
+            android:layout_below="@+id/t23"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="@drawable/box2"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textStyle="normal"
+            android:text="Can we meet again today for rest of the deal??"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/box6"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/i11"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/icon_material_insert_emoticon" />
+
+            <EditText
+                android:id="@+id/w11"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/i11"
+                android:hint="Say something.."
+                android:textColor="@color/green"
+                android:textColorHint="@color/green"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toEndOf="@+id/w11"
+                android:src="@drawable/icon_material_attach_file" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/icon_material_send" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    </RelativeLayout>

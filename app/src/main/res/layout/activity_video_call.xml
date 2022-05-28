@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    tools:context=".activity.VideoCallActivity">
+    <ImageView
+        android:id="@+id/callback"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="3dp"
+        android:background="@color/white"
+        android:padding="5dp"
+        android:src="@drawable/icon_material_arrow_back" />
+   <TextView
+       android:id="@+id/txt1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Ongoing Voice Call"
+       android:textSize="24sp"
+       android:layout_centerInParent="true"
+       android:layout_alignParentTop="true"
+       android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/txt1"
+        android:background="@drawable/box3"
+        android:layout_width="match_parent"
+        android:layout_height="570dp">
+
+        <TextView
+            android:layout_marginTop="250dp"
+            android:id="@+id/tt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zelda Logan"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_below="@+id/tt"
+            android:id="@+id/tt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="15:32"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:textAlignment="center" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tt2"
+            android:id="@+id/i11"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/group_380"/>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/i11"
+            android:id="@+id/i12"
+            app:iconTint="@color/white"
+            app:icon="@drawable/group_448"
+            android:backgroundTint="@color/green"
+            android:layout_marginStart="30dp"/>
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/i11"
+            android:id="@+id/i13"
+            app:icon="@drawable/icon_material_message"
+            app:iconTint="@color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/green"/>
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_below="@+id/txt1"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/circle"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/ellipse_7"/>
+</RelativeLayout>
